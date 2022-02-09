@@ -4,7 +4,7 @@ import AddTodo from './../components/AddTodo'
 import Todo from './../components/Todo'
 
 const getTodos = async () => {
-	const res = await fetch('http://localhost:3400/todos')
+	const res = await fetch('https://my-json-server.typicode.com/iahmediibrahim/react-courses-json/Todos')
 	return res.json()
 }
 

@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from 'react-query'
 
 const updateTodo = async ({ title, userId, isDone, id }) => {
-	const res = await fetch(`http://localhost:3400/todos/${id}`, {
+	const res = await fetch(`https://my-json-server.typicode.com/iahmediibrahim/react-courses-json/Todos/${id}`, {
 		method: 'PUT',
 		headers: {
 			'Content-type': 'application/json; charset=UTF-8',
@@ -15,7 +15,7 @@ const updateTodo = async ({ title, userId, isDone, id }) => {
 	return res.json()
 }
 const deleteTodo = async (id) => {
-	const res = await fetch(`http://localhost:3400/todos/${id}`, {
+	const res = await fetch(`https://my-json-server.typicode.com/iahmediibrahim/react-courses-json/Todos/${id}`, {
 		method: 'DELETE',
 	})
 	return res.json()

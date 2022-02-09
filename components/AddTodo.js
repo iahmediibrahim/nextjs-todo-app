@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useMutation, useQueryClient } from 'react-query'
 
 const addTodo = async (title) => {
-	const res = await fetch('http://localhost:3400/todos', {
+	const res = await fetch('https://my-json-server.typicode.com/iahmediibrahim/react-courses-json/Todos', {
 		method: 'POST',
 		body: JSON.stringify({
 			title,
